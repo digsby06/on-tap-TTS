@@ -1,0 +1,16 @@
+<%= simple_form_for(@comment) do |f| %>
+  <%= f.error_notification %>
+
+  <div class="form-inputs">
+    <%= f.input :comment %>
+  </div>
+
+  <div class="form-actions">
+    <%= f.button :submit %>
+  </div>
+
+  <div class="hidden">
+    <%= f.number_field :user_id, value: current_user.id %>
+    <%= f.number_field :blog_post_id, @blog_post.id %>
+  </div>
+<% end %>
