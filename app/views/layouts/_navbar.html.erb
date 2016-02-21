@@ -8,7 +8,7 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <%= link_to 'On Tap', '#', class: 'navbar-brand' %>
+      <%= link_to(image_tag("OnTap_logo.png", :alt => "logo", :title => "Home"), root_path) %>
     </div>
 
 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -36,35 +36,24 @@
       </form>
       <% if current_user %>
           <ul class="nav navbar-nav navbar-right">
-            <li><%= link_to 'Home', '#' %></li>
-            <li><%= link_to 'Find a Brewery', '#' %></li>
-            <li><%= link_to 'Find a Beer', '#' %></li>
-            <li><%= link_to 'Brew News', '#' %></li>
-            <li><%= link_to 'Write a Review' %></li>
+            <li><%= link_to 'Home', root_path %></li>
+            <li><%= link_to 'Find a Brewery', brewers_path %></li>
+            <li><%= link_to 'Find a Beer', beers_path %></li>
+            <li><%= link_to 'Brew News', blog_posts_path %></li>
+            <li><%= link_to 'Write a Review', new_brewer_path %></li>
             <li><%= link_to 'Logout', destroy_user_session_path, method: :delete %></li>
             
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
-          <ul class="dropdown-menu">
-            <li><a href="#">Action</a></li>
-            <li><a href="#">Another action</a></li>
-            <li><a href="#">Something else here</a></li>
-            <li role="separator" class="divider"></li>
-            <li><a href="#">Separated link</a></li>
-          </ul>
-          
           <% else %>
            
            <ul class="nav navbar-nav navbar-right">
-              <li><%= link_to 'Home', '#' %></li>
-              <li><%= link_to 'Find a Brewery', '#' %></li>
-              <li><%= link_to 'Find a Beer', '#' %></li>
-              <li><%= link_to 'Brew News', '#' %></li>
-              <li><%= link_to 'Write a Review' %></li>
+              <li><%= link_to 'Home', root_path %></li>
+              <li><%= link_to 'Find a Brewery', brewers_path %></li>
+              <li><%= link_to 'Find a Beer', beers_path %></li>
+              <li><%= link_to 'Brew News', blog_posts_path %></li>
+              <li><%= link_to 'Write a Review', new_brewer_path %></li>
               <li><%= link_to 'Sign Up', new_user_registration_path %></li>
               <li><%= link_to 'Login', new_user_session_path %></li>
       <% end %>
-        </li>
       </ul>
     </div>
   </div>

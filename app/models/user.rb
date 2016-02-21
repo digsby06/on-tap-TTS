@@ -8,4 +8,6 @@ class User < ActiveRecord::Base
 
   has_many :blog_posts
   has_many :comments
+  has_many :beers
+  has_many :brewers
 end

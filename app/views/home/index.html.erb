@@ -1,2 +1,11 @@
-<h1>Home#index</h1>
-<p>Find me in app/views/home/index.html.erb</p>
+<div class="jumbotron">
+      <div class="container">
+      	<div class="welcome">
+        <h1>Bottle or Can?</h1>
+        <p>If you can see the problem with this question, OnTap is probably for you. Join to stay connected with others who are passionate about great beers and breweries in your area.</p>
+        <p> <%= link_to "Sign Up", new_user_registration_path, class: "btn btn-primary btn-lg" %></p>
+        </div>
+      </div>
+</div>
+
+<%= render "home/brewnews" %>

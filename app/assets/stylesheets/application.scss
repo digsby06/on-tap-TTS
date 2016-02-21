@@ -18,3 +18,206 @@
 .hidden {
     display: none;
 }
+
+
+
+/* =============================================================
+GOOGLE FONT
+============================================================ */
+
+@import url(http://fonts.googleapis.com/css?family=Ubuntu); /* FREE GOOGLE FONT */
+@import url(http://fonts.googleapis.com/css?family=Oswald); /* FREE GOOGLE FONT */
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400); /* FREE GOOGLE FONT */
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:700); /* FREE GOOGLE FONT */
+
+
+
+
+/* =============================================================
+GENERAL STYLES
+============================================================ */
+body {
+font-family: 'Open Sans:700', sans-serif;
+color: #fff;
+Background-Color:#E58D3C;
+}
+
+.jumbotron{
+	background: url(Beers_header.jpg);
+	background-repeat: no-repeat;
+	width: 100%;
+	padding-top: 150px;
+    padding-bottom: 475px;
+    color: #222127;
+    font-family: 'Oswald', sans-serif;
+}
+
+.jumbotron .h1{
+	color: #222127;
+	font-family: 'Oswald', sans-serif;
+}
+
+.welcome{
+	position: absolute;
+	right: 0px;
+	width: 50%;
+	padding: 30px;
+}
+
+
+section {
+padding-top: 0px;
+padding-bottom: 40px;
+}
+
+.pad-bottom {
+padding-bottom: 60px;
+}
+
+.header {
+font-family: 'Oswald', sans-serif;
+padding-bottom: 40px;
+text-transform: uppercase;
+}
+
+.header hr {
+width: 115px;
+border-top: 15px solid #222127;
+}
+
+a {
+    color: #222127;
+    text-decoration: none;
+}
+
+
+/* =============================================================
+CUSTOM BUTTON STYLES
+============================================================ */
+.button-custom {
+border-radius: 0px;
+-webkit-border-radius: 0px;
+-moz-border-radius: 0px;
+-webkit-transition: all 0.5s ease-in-out;
+-moz-transition: all 0.5s ease-in-out;
+-o-transition: all 0.5s ease-in-out;
+transition: all 0.5s ease-in-out;
+margin: 25px 5px 5px 0px;
+margin: 5px;
+}
+
+.btn-custom-one {
+background-color: transparent;
+color: #fff;
+border: 2px solid rgb(228, 79, 79);
+}
+
+.btn-custom-one:hover {
+background-color: rgb(228, 79, 79);
+text-decoration: none;
+color: #fff;
+}
+
+.btn-custom-two {
+color: #fff;
+background-color: rgb(228, 79, 79);
+border: 2px solid rgb(228, 79, 79);
+}
+
+.btn-custom-two:hover {
+border: 2px solid rgb(228, 79, 79);
+text-decoration: none;
+color: #fff;
+background-color: transparent;
+}
+
+.btn-primary{
+	background-color: #222127;
+    border-color: #252331;
+}
+
+
+/* =============================================================
+MENU SECTION STYLES
+============================================================ */
+.navbar-inverse {
+background-color: rgba(0, 0, 0, 0.4);
+border-color: transparent;
+}
+
+.navbar-inverse .navbar-nav > .active > a, .navbar-inverse .navbar-nav > .active > a:hover, .navbar-inverse .navbar-nav > .active > a:focus {
+background-color: transparent;
+border-bottom: 1px solid rgb(228, 79, 79);
+}
+
+.navbar-inverse .navbar-nav > li > a {
+font-size: 12px;
+font-weight: 800;
+padding: 5px 0px;
+letter-spacing: 2px;
+margin: 10px 20px 10px 20px;
+color: #FFF;
+}
+
+.navbar-inverse .navbar-brand, .navbar-inverse .navbar-brand:hover {
+color: #fff;
+font-weight: 900;
+font-family: 'Oswald', sans-serif;
+}
+
+.navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form {
+border-color: transparent;
+}
+.navbar-inverse .navbar-toggle:hover, .navbar-inverse .navbar-toggle:focus {
+background-color: rgb(228, 79, 79);
+}
+.navbar-inverse .navbar-toggle {
+border-color: rgb(228, 79, 79);
+}
+
+.navbar-default {
+  background-color: #222127;
+  margin-bottom: 0px;
+  border-radius: 0px;
+  border-color: #252331;
+}
+.navbar-default .navbar-text {
+  color: #fff;
+}
+.navbar-default .navbar-nav > li > a {
+  color: #fff;
+}
+
+
+
+/* =============================================================
+BREWS NEWS SECTION STYLES
+============================================================ */
+
+#services .services-wrapper {
+padding: 20px;
+border-radius: 5px;
+-moz-border-radius: 5px;
+-webkit-border-radius: 5px;
+margin-bottom: 40px;
+background-color: rgba(255, 255, 255, 0.07);
+cursor: pointer;
+-webkit-transition: all 0.5s ease-in-out;
+-moz-transition: all 0.5s ease-in-out;
+-o-transition: all 0.5s ease-in-out;
+transition: all 0.5s ease-in-out;
+}
+
+#services .services-wrapper:hover {
+background-color: rgba(255, 255, 255, 0.20);
+}
+
+#services h3 {
+font-family: 'Oswald', sans-serif;
+}
+
+#services .services-wrapper i {
+margin: 5px;
+color: rgb(228, 79, 79);
+font-size: 60px;
+}

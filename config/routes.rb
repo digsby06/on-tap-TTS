@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
 
+  resources :beers
+  resources :brewers
   resources :comments
   resources :blog_posts
 root 'home#index'

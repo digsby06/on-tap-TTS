@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Location:</strong>
+  <%= @brewer.location %>
+</p>
+
+<p>
+  <strong>Phone Number:</strong>
+  <%= @brewer.phone_number %>
+</p>
+
+<p>
+  <strong>Website:</strong>
+  <%= @brewer.website %>
+</p>
+
+<p>
+  <strong>Rating:</strong>
+  <%= @brewer.rating %>
+</p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @brewer.name %>
+</p>
+
+<p>
+  <strong>Review:</strong>
+  <%= @brewer.review %>
+</p>
+
+<%= link_to 'Edit', edit_brewer_path(@brewer) %> |
+<%= link_to 'Back', brewers_path %>

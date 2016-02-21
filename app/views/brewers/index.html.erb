@@ -1,0 +1,37 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Brewers</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Location</th>
+      <th>Phone Number</th>
+      <th>Website</th>
+      <th>Rating</th>
+      <th>Name</th>
+      <th>Review</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @brewers.each do |brewer| %>
+      <tr>
+        <td><%= brewer.location %></td>
+        <td><%= brewer.phone_number %></td>
+        <td><%= brewer.website %></td>
+        <td><%= brewer.rating %></td>
+        <td><%= brewer.name %></td>
+        <td><%= brewer.review %></td>
+        <td><%= link_to 'Show', brewer %></td>
+        <td><%= link_to 'Edit', edit_brewer_path(brewer) %></td>
+        <td><%= link_to 'Destroy', brewer, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Brewer', new_brewer_path %>
